@@ -1,0 +1,6 @@
+pydantic>=2.12.5
+eth-keys>=0.7.0
+eth-utils>=5.3.1
+eth-hash[pycryptodome]>=0.7.1
+flask>=3.1.2
+requests>=2.32.5
