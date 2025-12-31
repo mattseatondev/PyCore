@@ -1,0 +1,13 @@
+[
+    {"user_id": "u001", "name": "Alice", "age": 28},
+    {"user_id": "u002", "name": "Bob", "age": 34},
+    {"user_id": "u003", "name": "Carol", "age": 22},
+    {"user_id": "u004", "name": "Dave", "age": 41},
+    {"user_id": "u005", "name": "Eve", "age": 30},
+    {"user_id": "u006", "name": "Frank", "age": 27},
+    {"user_id": "u007", "name": "Grace", "age": 36},
+    {"user_id": "u008", "name": "Hannah", "age": 25},
+    {"user_id": "u009", "name": "Ivan", "age": 32},
+    {"user_id": "u010", "name": "Judy", "age": 29}
+  ]
+  

@@ -132,26 +132,4 @@ def fib_nth_rcrs(n:int) -> int:
     0 1 1 2 3 5 8 13 21 34 55
     """
     
-def fib_binary_search(n:int) -> int:
-    # Identity: 
-    # F[2n] = F[n] * (2F[n + 1] - F[n])
-    # F[2n + 1] = F[n]^2 + F[n + 1]^2
-    def helper(k):
-        # base case
-        if k == 0:
-            return (0, 1)
-        # Divide and conquer with binary exponentiation
-        # Begin recursion
-        a, b = helper(k // 2)
-        # Calc F[2k]
-        c = a * (2 * b - a)
-        # Calc F[2k + 1]
-        d = a*a + b*b
-        # If k is even, return [2k, 2k + 1]
-        if k % 2 == 0:
-            return c, d
-        return d, c + d
-    return helper(n)[0]
-        
-
-print(fib_binary_search(int(sys.argv[1])))
+  
