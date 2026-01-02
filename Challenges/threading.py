@@ -39,6 +39,25 @@ def mid_threading():
     for t in threads:
         t.join()
     pr(results)
+    
+def simulate_io(name):
+    # Prints {name} starting...
+    # Sleep rand(1-3)
+    # Print('name' finished...)
+    return
+
+def adv_threading():
+    for i in range(5):
+        interval = random.uniform(0.5, 1.5)
+        print('Counting ')
+    # Measure time sequentially
+    seq_time = 0
+    
+    threads = (threading.Thread(target=simulate_io, args=(f'Thread {x}',)) for x in range(5))
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
 
 if __name__ == '__main__':
     exercise = 1
